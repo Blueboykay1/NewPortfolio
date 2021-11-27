@@ -22,7 +22,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #bfd8f1;
 }
 
 a {
@@ -37,8 +37,13 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  color: #7bbcfa;
+  color: #7bbcfa!;
 }
+#hero p {
+  color: #9dcaf7;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -213,7 +218,7 @@ overflow-x: hidden;
 }
 #hero:before {
   content: "";
-  background: rgba(26, 36, 39, 0.8);
+ 
   position: absolute;
   bottom: 0;
   top: 0;
@@ -225,10 +230,10 @@ overflow-x: hidden;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #9dcaf7;
+  color: #64c5f5;
 }
 #hero p {
-  color: #9dcaf7;
+  color: #7daedb;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -243,7 +248,7 @@ overflow-x: hidden;
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #9dcaf7;
+  color: #051b30;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -257,14 +262,16 @@ overflow-x: hidden;
   }
   #hero h1 {
     font-size: 32px;
-    line-height: 36px;
+    line-height: 36px;;
   }
   #hero p {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -447,6 +454,11 @@ section {
     width: 80%;
   }
 }
+@media (min-width: 992px) {
+  .col {
+    width: 80%;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -623,3 +635,22 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.contain {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 75%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.delphi {width: 60%; background-color: #808080;} /* Dark Grey */
